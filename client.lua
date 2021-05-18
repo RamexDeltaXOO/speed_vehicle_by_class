@@ -30,7 +30,7 @@ Citizen.CreateThread( function()
 		if IsPedInAnyVehicle(GetPlayerPed(-1), false) then
 		    local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), false)
 		    local vehicleClass = GetVehicleClass(vehicle)
-		    SetVehicleMaxSpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false), vehicleClassSpeed[vehicleClass])
+		    SetVehicleMaxSpeed(vehicle, vehicleClassSpeed[vehicleClass])
 		end
 	end
 end)
